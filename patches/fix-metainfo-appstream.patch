@@ -1,0 +1,17 @@
+diff --git a/data/linux/io.github.fjrevoredo.mini-diarium.metainfo.xml b/data/linux/io.github.fjrevoredo.mini-diarium.metainfo.xml
+index d9f2e2c..bc50357 100644
+--- a/data/linux/io.github.fjrevoredo.mini-diarium.metainfo.xml
++++ b/data/linux/io.github.fjrevoredo.mini-diarium.metainfo.xml
+@@ -25,10 +25,11 @@
+   <launchable type="desktop-id">io.github.fjrevoredo.mini-diarium.desktop</launchable>
+ 
+   <url type="homepage">https://mini-diarium.com</url>
+   <url type="bugtracker">https://github.com/fjrevoredo/mini-diarium/issues</url>
++  <url type="vcs-browser">https://github.com/fjrevoredo/mini-diarium</url>
+ 
+-  <developer>
++  <developer id="io.github.fjrevoredo">
+     <name>Francisco J. Revoredo</name>
+   </developer>
+ 
+   <screenshots>
