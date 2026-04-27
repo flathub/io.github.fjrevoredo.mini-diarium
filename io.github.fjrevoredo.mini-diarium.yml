@@ -23,6 +23,7 @@ modules:
         npm_config_cache: /run/build/mini-diarium/flatpak-node/npm-cache
         npm_config_offline: 'true'
         ESBUILD_BINARY_PATH: /run/build/mini-diarium/flatpak-node/cache/esbuild/bin/esbuild-current
+        PUPPETEER_SKIP_DOWNLOAD: 'true'
     build-commands:
       - npm ci --offline --legacy-peer-deps
       - npm run build
