@@ -23,6 +23,7 @@ modules:
         npm_config_cache: /run/build/mini-diarium/flatpak-node/npm-cache
         npm_config_offline: 'true'
         ESBUILD_BINARY_PATH: /run/build/mini-diarium/flatpak-node/cache/esbuild/bin/esbuild-current
+        PUPPETEER_SKIP_DOWNLOAD: 'true'
     build-commands:
       - npm ci --offline --legacy-peer-deps
       - npm run build
@@ -37,6 +38,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/fjrevoredo/mini-diarium
-        commit: 1829e39e5835f9681c3b11518298b8a33e411a92
+        commit: 99d18b35bd6ac9e54d2fd5f20a8c5879f47ff424
       - node-sources.json
       - cargo-sources.json
