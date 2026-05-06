@@ -23,7 +23,6 @@ modules:
         npm_config_cache: /run/build/mini-diarium/flatpak-node/npm-cache
         npm_config_offline: 'true'
         ESBUILD_BINARY_PATH: /run/build/mini-diarium/flatpak-node/cache/esbuild/bin/esbuild-current
-        PUPPETEER_SKIP_DOWNLOAD: 'true'
     build-commands:
       - npm ci --offline --legacy-peer-deps
       - npm run build
@@ -35,9 +34,10 @@ modules:
       - install -Dm644 src-tauri/icons/128x128@2x.png /app/share/icons/hicolor/256x256/apps/io.github.fjrevoredo.mini-diarium.png
       - install -Dm644 data/linux/io.github.fjrevoredo.mini-diarium.metainfo.xml /app/share/metainfo/io.github.fjrevoredo.mini-diarium.metainfo.xml
       - install -Dm644 LICENSE /app/share/licenses/io.github.fjrevoredo.mini-diarium/mini-diarium/LICENSE
+      - install -Dm644 ../fonts/*.ttf -t /app/share/fonts/
     sources:
       - type: git
         url: https://github.com/fjrevoredo/mini-diarium
-        commit: 99d18b35bd6ac9e54d2fd5f20a8c5879f47ff424
+        commit: 475a7386cbdadc305d4fe7ac6dcb00814ae52fbc
       - node-sources.json
       - cargo-sources.json
