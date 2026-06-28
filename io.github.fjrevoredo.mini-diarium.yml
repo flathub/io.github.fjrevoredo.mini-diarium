@@ -38,6 +38,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/fjrevoredo/mini-diarium
-        commit: e77dbb72d7614e3ad0ea55ba3fe268ed7c292c67
+        commit: 84d1e45f2bb5143af7f896a6f5d690dfc302ef5b
       - node-sources.json
       - cargo-sources.json
